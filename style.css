@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dff5f5;
+  font-family: Arial, sans-serif;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 300px; /* Reduced for top gameplay */
+  background-color: #dff5f5;
+  overflow: hidden;
+  border-bottom: 2px solid #aaa;
+  margin-top: 50px;
+}
+
+#player {
+  position: absolute;
+  bottom: 20px; /* closer to ground */
+  left: 100px;  /* pulled in from the left edge */
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 5px;
+}
+
+#obstacle {
+  position: absolute;
+  bottom: 40px;
+  left: 100vw;
+  width: 30px;
+  height: 50px;
+  background-color: #e74c3c;
+  border-radius: 4px;
+}
+
+
+
+#score {
+  position: absolute;
+  top: 10px; /* move into view */
+  left: 20px;
+  font-size: 18px;
+  color: #333;
+  z-index: 10;
+}
