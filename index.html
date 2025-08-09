@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jump Game</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jumping Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="game.js"></script>
 </head>
 <body>
-  <body>
   <div id="game">
+    
+    <div id="sky"></div>
+
     <div id="player"></div>
-    <div id="obstacle"></div>
     <div id="score">Score: 0</div>
     <div id="leaderboard"></div>
+    <div id="ground"></div>
+
+    
+    <div id="intro" aria-modal="true" role="dialog">
+      <div class="panel">
+        <h1>Jumping Game</h1>
+        <p>
+          Press <strong>Space</strong> to jump. Hold Space for a higher jump.<br>
+          Avoid obstacles to score points. Speed and difficulty increase over time.<br>
+          Day turns to night as you survive longer. Good luck!
+        </p>
+        <button id="startBtn">Start Game</button>
+        <p class="hint">Tip: press <kbd>Enter</kbd> or click to play again after a game over.</p>
+      </div>
+    </div>
   </div>
-</body>
-
-
-
-  <audio id="jumpSound" src="jump.mp3" preload="auto"></audio>
-  <audio id="hitSound" src="hit.mp3" preload="auto"></audio>
-
-  <script src="game.js"></script>
 </body>
 </html>
